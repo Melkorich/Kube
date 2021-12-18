@@ -8,6 +8,28 @@ $sm: 576px;
 $xs: 480px;
 $xsm: 320px;
 
+
+//fonts
+
+%PTMono {
+  font-family: 'Pt-Mono', sans-serif;
+  font-weight: 400;
+}
+
+%raleway {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+//colors
+
+$grey666: #666666;
+$black111: #111111;
+$black21: #212121;
+$pink: #D71362;
+
+
+
 // fansybox error
 
 @function max($numbers...) {

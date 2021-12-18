@@ -1,0 +1,26 @@
+.link-animate {
+  transition: color 0,3s;
+  outline: none;
+
+  &:focus {
+    color: $pink;
+  }
+  &:hover {
+    color: $pink;
+  }
+  &:active {
+    color: $pink;
+  }
+}
+
+.icon-animate {
+
+  &:hover .social-icon{
+    transform: translateY(-5px);
+  }
+
+  &:hover .social-icon{
+    fill: $pink;
+  }
+
+}
