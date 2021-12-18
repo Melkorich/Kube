@@ -1,0 +1,40 @@
+.footer {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__top {
+    padding: 70px 0 120px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__bottom {
+    padding: 35px 0;
+    text-align: center;
+    background-color: #0B051C;
+    color: $grey666;
+  }
+}
