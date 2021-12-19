@@ -9,27 +9,35 @@
 //general
 
 //links-animation
-@import  './links-animation/links-animation';
+@import  'links-animation/links-animation';
 
 //header
-@import  './general/header';
+@import  'general/header';
 
 //footer
-@import  './general/footer';
+@import  'general/footer';
 
 //socials
-@import  './general/socials';
+@import  'general/socials';
+
+//album-cards
+@import  'cards/album-card';
+
+//links, buttons
+@import  'general/links';
 
 
 //index main page
 
 //section intro
-@import  './index/intro';
+@import  'index/intro';
 
 //section reputation
-@import  './index/reputation';
+@import  'index/reputation';
 
-// @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+//section shows
+@import  'index/shows';
+
 
 
  
