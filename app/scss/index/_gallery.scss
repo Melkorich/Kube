@@ -1,0 +1,39 @@
+.gallery {
+
+  &__items {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+  }
+
+  &__item {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+    &:hover .gallery__img {
+      transform: scale(1.05);
+    }  
+
+    &:hover::after {
+      background-color: rgba(#212121, 0);
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgba(#212121, 0.3);
+      transition: background-color 0.3s;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+}
