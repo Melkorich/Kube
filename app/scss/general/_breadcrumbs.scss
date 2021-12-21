@@ -1,0 +1,32 @@
+.breadcrumbs {
+  background-color: #100b21;
+  // background-color: #741239;
+  width: 100%;
+  padding: 112px 0 140px; 
+
+  &__title {
+    font-size: 48px;
+    line-height: 1.125;
+    @extend %PTMono;
+    text-transform: uppercase;
+    font-weight: 600;
+  } 
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    padding-right: 10px;
+  }
+
+  &__item:last-child {
+    padding-right: 0;
+    color: $pink;
+  }
+
+  &__simbol {
+    display: inline-block;
+  }
+}
