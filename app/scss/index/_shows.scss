@@ -1,15 +1,6 @@
 .shows {
   padding: 120px 0;
 
-  &__text {
-    display: block;
-    text-align: center;
-    color: $grey666;
-    font-size: 16px; 
-    line-height: 1.25;
-    margin-bottom: 50px;
-  }
-
   &__list {
     width: 100%;
     margin-bottom: 61px;
@@ -129,25 +120,6 @@
     border: 1px solid transparent;
     border-radius: 5px;
     text-align: center;
-    position: relative;
-    overflow: hidden;
-
-    &:hover::before {
-      animation-name: move-line;
-      animation-duration: 0.3s;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 1.5em;
-      height: 100%;
-      background-color: rgba(#fff, 0.6);
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      transform: translateX(-300%) skew(-45deg);
-    }
   } 
 
   &__link {
@@ -156,14 +128,5 @@
     border-bottom:1px solid $grey666;
     height: 55px;
     margin: 0 auto;
-  }
-}
-
-@keyframes move-line {
-  from {
-    transform: translateX(-300%) skew(-45deg);
-  }
-  to {
-    transform: translateX(1000%) skew(-45deg);
   }
 }

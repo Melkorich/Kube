@@ -10,7 +10,7 @@
   }
   &:active {
     color: $pink;
-  } 
+  }  
 }
 
 .icon-animate {
@@ -22,5 +22,36 @@
   &:hover .social-icon{
     fill: $pink;
   }
+} 
 
+
+.blink-effect {
+  position: relative;
+  overflow: hidden;
+
+  &:hover::before {
+    animation-name: move-line;
+    animation-duration: 0.3s;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5em;
+    height: 100%;
+    background-color: rgba(#fff, 0.6);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transform: translateX(-300%) skew(-45deg);
+  }
+}
+
+@keyframes move-line {
+  from {
+    transform: translateX(-300%) skew(-45deg);
+  }
+  to {
+    transform: translateX(1000%) skew(-45deg);
+  }
 }

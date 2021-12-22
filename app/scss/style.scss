@@ -16,18 +16,25 @@
 
 //footer 
 @import  'general/footer';
+@import  'general/footer-socials'; 
 
 //socials
 @import  'general/socials';
 
-//album-cards
-@import  'cards/album-card';
+//cards
+@import  'cards/team-card';
 
 //links, buttons
 @import  'general/links';
 
 //breadcrumbs
 @import  'general/breadcrumbs';
+
+//contact
+@import  'general/contact';
+
+//reputation-disc
+@import  'general/reputation-disc';
 
 
 //index main page
@@ -37,6 +44,9 @@
 
 //section reputation
 @import  'index/reputation';
+
+//about-slider
+@import  'index/albums-slider';
 
 //section shows
 @import  'index/shows';
@@ -60,5 +70,15 @@
 //discography page
 @import  'discography/discography';
 
+//band page
+@import  'band/band';
 
- 
+//biography page
+@import  'biography/biography';
+
+//tours page
+@import  'tours/tours';
+
+//single-tour page
+@import  'single-tour/single-tour';
+

@@ -1,17 +1,21 @@
 .footer {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
+  
   &__top {
     padding: 70px 0 120px;
     text-align: center;
-  }
+    background-image:url('../images/footer/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }  
 
   &__title {
     margin-bottom: 70px;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 1;
   }
 
   &__text {
@@ -19,16 +23,8 @@
     line-height: 1.4;
     letter-spacing: 2px;
     margin-bottom: 50px;
-  }
-
-  &__socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 30px;
+    position: relative;
+    z-index: 1;
   }
 
   &__bottom {
@@ -37,4 +33,43 @@
     background-color: #0B051C;
     color: $grey666;
   }
+}
+
+.main--discography ~ .footer .footer__top,
+.main--tours ~ .footer .footer__top {
+  background-image: url('../images/discography/footer-bg.jpg');
+  position: relative; 
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba($black111, 0.5);
+    z-index: 0;
+  }
+} 
+
+.main--band ~ .footer .footer__top {
+  background-image: url('../images/team/team-bg.jpg');
+  position: relative; 
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba($black111, 0.7);
+    z-index: 0;
+  }
+}
+
+.main--discography ~ .footer .footer__bottom,
+.main--band ~ .footer .footer__bottom,
+.main--tours ~ .footer .footer__bottom   {
+  background-color: $black111;
 }

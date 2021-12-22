@@ -2,19 +2,21 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 
   &__inner {
     padding: 187px 0 187px;
     display: flex;
     align-items: flex-end;
-  }
-
+  } 
+ 
   &__title {
     font-size: 36px;
     @extend %PTMono;
     padding-bottom: 30px;
     position: relative;
     margin-bottom: 67px;
+    text-transform: uppercase;
 
     &::before {
       position: absolute;

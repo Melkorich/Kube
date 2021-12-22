@@ -1,0 +1,28 @@
+.contact {
+  padding: 120px 0;
+
+  &__subtitle {
+    text-transform: uppercase;
+    color: $black111;
+    font-size: 28px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 1.4;
+    color: $grey666;
+    display: block;
+  }
+
+  &__link:not(:last-child)  {
+    margin-bottom: 6px;
+  }
+}
+
