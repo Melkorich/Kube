@@ -40,7 +40,7 @@
     p {
       margin-bottom: 20px;
     }
-  }
+  } 
 
   &__links-title {
     font-weight: 600;
@@ -53,3 +53,64 @@
     margin-bottom: 20px;
   }
 }
+
+.tour-info {
+  width: 370px;
+
+  &__title,
+  &__subtitle {
+    text-transform: uppercase;
+    color: $black21;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  &__items {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    padding-left: 35px;
+    position: relative;
+    color: $grey666;
+    font-size: 14px;
+    line-height: 1.4;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: -5px;
+      left: 0;
+      width: 35px;
+      height: 35px;
+      background-repeat:no-repeat;
+      background-size: conain;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__item:nth-child(1)::before {
+    background-image: url('../images/single-tour/calendar.svg');
+  }
+
+  &__item:nth-child(2)::before {
+    background-image: url('../images/single-tour/clock.svg');
+  }
+
+  &__item:nth-child(3)::before {
+    background-image: url('../images/single-tour/map.svg');
+  }
+
+  &__item:nth-child(4)::before {
+    background-image: url('../images/single-tour/planet.svg');
+  }
+
+  &__map {
+    width: 300px;
+    height: 520px;
+  }
+} 
