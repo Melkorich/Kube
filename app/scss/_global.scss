@@ -40,16 +40,21 @@ body {
   margin: 0 auto;
 } 
 
+.container--mini {
+  max-width: 970px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .title {
   text-align: center;
   text-transform: uppercase;
   font-size: 48px;
   color: $black111;
-  @extend %PTMono;
-  font-weight: 600;
   padding-bottom: 40px;
   position: relative;
   margin-bottom: 38px;
+  line-height: 1.125;
 
   &::before {
     position: absolute;
@@ -96,4 +101,15 @@ body {
   font-size: 16px; 
   line-height: 1.25;
   margin-bottom: 50px;
+}
+
+.follow {
+  font-weight: 600;
+  display: block;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 1.1;
+  color: $black21;
+  padding-top: 10px;
+  margin-bottom: 20px;
 }

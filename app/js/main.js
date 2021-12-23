@@ -14,6 +14,7 @@ $(function(){
     arrows: false,
     autoplay: true,
     autoplaySpeed: 4000,
+    draggable: false,
   });
  
 });
