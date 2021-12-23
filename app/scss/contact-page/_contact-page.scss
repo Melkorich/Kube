@@ -113,6 +113,22 @@
       line-height: 1.4;
       @extend %PTMono;
     } 
+
+    &:focus::-webkit-input-placeholder {
+      color: transparent
+    }
+    
+    &:focus::-moz-placeholder {
+      color: transparent
+    }
+    
+    &:focus:-moz-placeholder {
+      color: transparent
+    }
+    
+    &:focus:-ms-input-placeholder {
+      color: transparent
+    }
   }
 
   .textarea {
@@ -133,6 +149,22 @@
       line-height: 1.4;
       @extend %PTMono;
     } 
+
+    &:focus::-webkit-input-placeholder {
+      color: transparent
+    }
+    
+    &:focus::-moz-placeholder {
+      color: transparent
+    }
+    
+    &:focus:-moz-placeholder {
+      color: transparent
+    }
+    
+    &:focus:-ms-input-placeholder {
+      color: transparent
+    }
   }
 
   .contacts__btn {
