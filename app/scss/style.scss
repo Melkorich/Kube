@@ -1,6 +1,6 @@
 @import 'fonts';
 @import 'vars';
-@import 'media'; 
+// @import 'media'; 
 @import 'mixin';
 @import 'reset';
 @import 'libs';
@@ -33,14 +33,12 @@
 //contact
 @import  'general/contact';
 
-//reputation-disc
-@import  'general/reputation-disc';
 
 
 //index main page
 
 //section intro
-@import  'index/intro';
+@import  'index/intro'; 
 
 //section reputation
 @import  'index/reputation';
@@ -69,18 +67,17 @@
 
 //discography page
 @import  'discography/discography';
+@import  'discography/reputation-disc';
 
 //band page
-@import  'band/band'; 
+@import  'band/band';  
 
 //biography page
-@import  'biography/biography';
+@import  'band-biography/biography';
 
 //tours page
 @import  'tours/tours';
-
-//single-tour page
-@import  'single-tour/single-tour';
+@import  'tours/tours-page';
 
 //media page
 @import  'media/media';
@@ -90,4 +87,8 @@
 
 //contact-page page
 @import  'contact-page/contact-page';
+
+
+//single-album page
+@import  'single-album/single-album';
 

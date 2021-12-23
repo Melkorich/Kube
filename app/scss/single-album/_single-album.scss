@@ -1,0 +1,84 @@
+.reputation-album {
+  padding: 120px 0;
+
+  &__title {
+    color: $black111;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 554px;
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+
+    .reputation-album__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    padding-bottom: 70px;
+    border-bottom: 0.5px solid rgba($grey666, 0.5);
+  }
+
+  &__item {
+    font-size: 28px;
+    color: $black21;
+    line-height: 1.1;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin: 30px 0;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: $black21;
+    line-height: 1.1;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.4;
+    color: $grey666;
+    columns: 2;
+    padding-bottom: 30px;
+    border-bottom: 0.5px solid rgba($grey666, 0.5);
+
+    p {
+      max-width: 570px;
+      margin-bottom: 20px;
+    }
+
+    P:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__links {
+    padding-top: 60px;
+    display: flex;
+  }
+
+  &__links-left {
+    max-width: 550px;
+    width: 100%;
+    margin-right: 30px;
+    min-width: 270px;
+  }
+
+  &__links-right {
+    min-width: 270px;
+  }
+}
