@@ -20,13 +20,14 @@
   width: 370px;
   background-color: #eee;
   transition: box-shadow 0.3s;
-
-  &:hover .article__image::before{
-    background-color: rgba(#212121, 0);
-  }
+  position: relative;
 
   &:hover {
     box-shadow: 10px 10px 25px 2px rgba(0, 0, 0, 0.15);
+  } 
+
+  &:hover .article__image::before{
+    background-color: rgba(#212121, 0);
   }
 
   &__image {
@@ -40,7 +41,7 @@
     &:hover .article__img {
       transform: scale(1.15);
     }
-
+  
     &::before {
       position: absolute;
       content: '';
@@ -49,16 +50,16 @@
       background-color: rgba(#212121, 0.5);
       top: 0;
       left: 0;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s ease-in-out;
     } 
 
     .article__img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.3s;
+      transition: transform 0.3s ease-in-out;
     }
-  } 
+  }  
 
   &__content {
     padding: 20px 21px 28px;

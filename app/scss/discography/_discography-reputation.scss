@@ -64,11 +64,12 @@
     P:last-child {
       margin-bottom: 0;
     }
-  }
+  }  
 
   &__links {
     padding-top: 60px;
     display: flex;
+    align-items: center;
   }
 
   &__links-left {

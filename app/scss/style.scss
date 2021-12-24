@@ -34,7 +34,7 @@
 @import  'general/contact';
 
 //forms, inputs etc
-@import  'forms/forms';
+@import  'forms/forms'; 
 
 
 
@@ -71,6 +71,7 @@
 //discography page
 @import  'discography/discography';
 @import  'discography/reputation-disc';
+@import  'discography/discography-reputation';
 
 //band page
 @import  'band/band';  
@@ -83,7 +84,7 @@
 @import  'tours/tours-page';
 
 //media page
-@import  'media/media';
+@import  'media/media'; 
 
 //press page
 @import  'press/article-page';
@@ -92,6 +93,4 @@
 @import  'contact-page/contact-page';
 
 
-//single-album page
-@import  'single-album/single-album';
 
