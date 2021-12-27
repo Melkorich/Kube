@@ -1,6 +1,7 @@
 .breadcrumbs {
   background-color: #100b21;
   padding: 100px 0; 
+  margin-top: 95px;
 
   @include maxw($md) {
     padding: 50px 0;

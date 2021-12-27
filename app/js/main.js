@@ -23,11 +23,16 @@ if(isMobile.any()){
 	}
 }else{
 	body.classList.add('mouse');
-} 
+}
 
 //чтобы стрелка при клике работала всегда, например без ховера, то просто удалить или закоментить if else
 
+$(document).ready(function() {
+	$('.wrapper').addClass('active');
+});
+
 $(function(){ 
+
 
   $('.album-slider').slick({
     vertical: true,
