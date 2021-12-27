@@ -27,7 +27,7 @@ if(isMobile.any()){
 
 //чтобы стрелка при клике работала всегда, например без ховера, то просто удалить или закоментить if else
 
-$(function(){
+$(function(){ 
 
   $('.album-slider').slick({
     vertical: true,
@@ -35,7 +35,7 @@ $(function(){
     verticalSwiping: true,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 4500,
+    autoplaySpeed: 4000,
 
     responsive: [
       {
@@ -86,6 +86,14 @@ $(function(){
   // $('.arrow').on('click', function() {
   //   $('.sub-menu').css('display', 'block');
   // });
+
+  $(window).scroll(function(){
+    if ($(document).scrollTop() > 150) {
+      $(".header__top").addClass("header--scroll");
+    } else {
+      $(".header__top").removeClass("header--scroll");
+    }
+  });
  
 });
 
