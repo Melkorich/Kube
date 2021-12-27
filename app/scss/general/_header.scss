@@ -4,6 +4,10 @@
   background-size: cover;
   background-attachment: fixed;
 
+  @include maxw($md) {
+    background-attachment: scroll;
+  }
+
   @include maxw($sm) {
     background-position: center left;
   }  
