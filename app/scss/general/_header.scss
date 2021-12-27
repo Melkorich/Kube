@@ -4,11 +4,20 @@
   background-size: cover;
   background-attachment: fixed;
 
+  @include maxw($sm) {
+    background-position: center left;
+  } 
+
   &__inner {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
+
+  //   @include maxw($sm) {
+  //     min-height: fit-content;
+  //   }
+  // }
 
   &__top {
     padding: 15px 0 10px;
@@ -26,12 +35,21 @@
   &__content {
     margin: auto 0;
     padding-top: 20px;
+
+    @include maxw($sm) {
+     margin: 150px 0;
+    }
   }
 
   &__content-inner {
     max-width: 690px;
     width: 100%;
     margin-left: auto;
+
+    @include maxw($lg) {
+      max-width: 100%;
+      margin-left: 0;
+    }
   }
 
   &__subtitle {
@@ -41,6 +59,15 @@
     position: relative;
     margin-bottom: 10px;
     @extend %raleway;
+
+    @include maxw($md) {
+      padding-left: 0;
+      font-size: 20px;
+    }
+
+    @include maxw($sm) {
+      font-size: 18px;
+    }
 
     &::before {
       position: absolute;
@@ -52,6 +79,10 @@
       height: 1px;
       top: 13px;
       left: 0;
+
+      @include maxw($md) {
+        display: none;
+      }
     }
   } 
 
@@ -61,12 +92,29 @@
     margin-bottom: 21px;
     @extend %PTMono;
     font-weight: 600;
+
+    @include maxw($md) {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    @include maxw($sm) {
+      font-size: 40px;
+    }
     
     span {
       font-size: 48px;
       display: block;
       font-weight: 400;
-    }
+
+      @include maxw($md) {
+        font-size: 40px;
+      }
+
+      @include maxw($sm) {
+        font-size: 33px;
+      }
+    } 
   }
 
   &__text {
@@ -77,10 +125,39 @@
 .menu {
   &__list {
     display: flex;
+
+    @include maxw($lg) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      min-width: 200px;
+      height: 100%;
+      padding: 150px 5px;
+      text-align: center;
+      background-color: rgba($pink, 0.5);
+      backdrop-filter: blur(10px);
+      z-index: 20;
+      overflow: auto;
+      transform:translateX(-200%);
+      transition: transform 0.5s;
+    }
   }
+
+  &__list--active {
+    transform:translateX(0%);
+  } 
 
   &__item {
     margin-right: 30px;
+    position: relative;
+    display: flex;
+
+    @include maxw($lg) {
+      margin: 20px 0 20px 0;
+      display: block;
+    }
   }
 
   &__item:last-child {
@@ -92,5 +169,67 @@
     text-transform: uppercase;
     @extend %PTMono;
     font-size: 16px;
+    position: relative;
+
+    @include maxw($lg) {
+      color: #fff;
+      display: block;
+      padding: 10px 0;
+      font-size: 18px;
+      text-align: center;
+
+      &:hover {
+        background-color:rgb(240, 230, 230);
+      }
+    }
+
+    &.menu__sub {
+      margin-right: 20px;
+
+      @include maxw($lg) {
+        margin-right: 0;
+      }
+    }
+
+    &.parent {
+      margin-right: 20px;
+
+      @include maxw($lg) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  background-color:rgba($pink, 0.3);
+  padding: 3px 4px;
+  border-radius: 0 0 5px 5px;
+
+  @include maxw($lg) {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    color: #fff;
+    font-size: 14px;
+    padding: 2px;
+    width: 100%;
+    display: inline-block;
+
+    &:hover {
+      background-color:rgba($pink, 0.5);
+    }
   }
 }

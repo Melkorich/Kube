@@ -5,8 +5,20 @@
   background-attachment: fixed;
   padding: 165px 0;
 
+  @include maxw($lg) {
+    padding: 100px 0;
+  }
+
+  @include maxw($xs) {
+    padding: 40px 0;
+  }
+
   &__inner {
     display: flex;
+
+    @include maxw($lg) {
+      display: block;
+    }
   } 
 
   .reputation__image {
@@ -14,10 +26,18 @@
     min-width: 570px;
     height: 370px;
     margin-bottom: 0;
-  }
-
-  .reputation__image {
     margin-right: 30px;
+
+    @include maxw($lg) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    @include maxw($md) {
+      min-width: 100%;
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__content {

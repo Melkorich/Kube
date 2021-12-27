@@ -5,9 +5,29 @@
     align-items: center;
     position: relative;
     z-index: 1;
+
+    @include maxw($lg) {
+     flex-wrap: wrap;
+    }
+
+    .social-icon {
+      @include maxw($sm) {
+        max-width: 40px;
+        max-height: 35px;
+      }
+    }
   }
 
   &__item:not(:last-child) {
     margin-right: 30px;
+
+    @include maxw($lg) {
+      margin-right: 0;
+    }
   } 
+
+  &__item {
+    padding: 15px;
+  }
+
 }

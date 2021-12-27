@@ -5,9 +5,18 @@
   background-attachment: fixed;
 
   &__inner {
-    padding: 187px 0 187px;
+    padding: 187px 0;
     display: flex;
     align-items: flex-end;
+
+    @include maxw($xl) {
+     display: block;
+     padding: 100px 0;
+    }
+
+    @include maxw($sm) {
+      padding: 50px 0;
+    }
   } 
  
   &__title {
@@ -17,6 +26,12 @@
     position: relative;
     margin-bottom: 67px;
     text-transform: uppercase;
+
+    @include maxw($sm) {
+      font-size: 30px;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+    }
 
     &::before {
       position: absolute;
@@ -35,6 +50,12 @@
     max-width: 760px;
     width: 100%;
     margin-right: 30px;
+
+    @include maxw($xl) {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &__info {
@@ -48,7 +69,7 @@
 
   &__data {
     margin-bottom: 8px;
-  }
+  } 
 
   &__image {
     display: inline-block;
@@ -56,12 +77,19 @@
     height: 370px;
     margin-bottom: 40px;
 
+    @include maxw($md) {
+     width: 100%;
+     max-width: 100%;
+     display: block;
+     height: auto;
+    }
+
     .reputation__img {
       width: 100%;
       height: 100%;
       object-fit: contain;
     }
-  }
+  } 
 
   &__available {
     display: block;

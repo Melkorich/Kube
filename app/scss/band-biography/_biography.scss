@@ -1,10 +1,22 @@
 .biography {
   padding: 120px 0;
 
+  @include maxw($xl) {
+    padding: 50px 0;
+  }
+
   &__part {
     display: flex;
     margin-bottom: 70px;
-  } 
+
+    @include maxw($xl) {
+      display: block;
+    }
+
+    @include maxw($sm) {
+      margin-bottom: 40px;
+    } 
+  }  
 
   &__image {
     width: 45%;
@@ -15,6 +27,16 @@
     margin-left: 70px;
     z-index: 1; 
 
+    @include maxw($xl) {
+      height: 400px;
+      width: 500px;
+      margin: 0 auto 20px;
+    }
+
+    @include maxw($sm) {
+      width: 100%;
+    }
+
     &::before {
       position: absolute;
       content: '';
@@ -24,6 +46,10 @@
       top: -55px;
       left: -70px;
       z-index: -1;
+
+      @include maxw($xl) {
+        display: none;
+      }
     }
 
     .biography__img {
@@ -35,6 +61,10 @@
 
   &__content {
     width: 40%;
+
+    @include maxw($xl) {
+      width: 100%; 
+    }
   }
 
   &__title {
@@ -42,6 +72,10 @@
     line-height: 1.125;
     color: #0E0E0E;
     margin-bottom: 10px;
+
+    @include maxw($sm) {
+      font-size: 29px;
+    }
   }
 
   &__descr {

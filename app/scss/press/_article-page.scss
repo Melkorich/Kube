@@ -1,6 +1,10 @@
 .article-page {
   padding: 120px 0;
 
+  @include maxw($md) {
+   padding: 50px 0;
+  }
+
   &__image {
     width: 100%;
     max-height: 630px;
@@ -20,6 +24,10 @@
     font-size: 28px;
     line-height: 1.1;
     margin-bottom: 25px;
+
+    @include maxw($md) {
+      font-size: 24px;
+    }
   }
 
   &__data {
@@ -72,6 +80,14 @@
     padding: 60px 0 60px 45px;
     margin: 30px 0;
     border-left: 5px solid #D71362;
+
+    @include maxw($sm) {
+      border-left:none;
+      margin: 0;
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: rgba($pink, 0.2);
+    }
   }
 
   &__subtitle {

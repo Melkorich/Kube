@@ -1,8 +1,16 @@
 .videos {
   padding: 120px 0 95px;
+
+  @include maxw($md) {
+    padding: 60px 0;
+  }
   
   &__text {
     margin-bottom: 70px;
+
+    @include maxw($md) {
+     margin-bottom: 40px;
+    }
   }
 
   &__list {
@@ -10,12 +18,21 @@
     margin: 0 -15px;
     flex-wrap: wrap;
     margin-bottom: 56px;
+
+    @include maxw($md) {
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   &__item {
     padding: 20px 15px;
     flex: 0 1 33.333%;
     display: flex;
+
+    @include maxw($md) {
+     padding: 20px 0;
+    }
   }
 
   &__link {
@@ -34,6 +51,11 @@
   text-align: center;
   width: 370px;
 
+  @include maxw($md) {
+    display: block;
+    width: 100%;
+  }
+
   &__link {
     display: block;
     width: 100%;
@@ -42,6 +64,11 @@
     transition: box-shadow 0.5s;
     position: relative;
     box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0);
+
+    @include maxw($xs) {
+      margin-bottom: 10px;
+      height: 200px;
+    } 
 
     &::before {
       position: absolute;
@@ -88,7 +115,7 @@
       align-items: center;
       justify-content: center;
       border-radius: 50%;
-      TRANSITION: background-color 0.3s;
+      transition: background-color 0.3s;
 
       .video-play {
         width: 16px;
@@ -105,6 +132,11 @@
     color: $black21;
     margin-bottom: 20px;
     flex: 1 1 auto;
+
+    @include maxw($xs) {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
   }
 
   &__text {

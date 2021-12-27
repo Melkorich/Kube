@@ -24,6 +24,14 @@ body {
   color: #fff;
 }
 
+body.mouse .menu__list>li:hover .sub-menu {
+  display: block;
+}
+
+body.touch .sub-menu.open {
+  display: block;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -56,6 +64,16 @@ body {
   margin-bottom: 38px;
   line-height: 1.125;
 
+  @include maxw($md) {
+    font-size: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+  }
+
+  @include maxw($xs) {
+    font-size: 30px;
+  }
+
   &::before {
     position: absolute;
     content: '';
@@ -79,7 +97,7 @@ body {
     height: 100%;
     object-fit: cover;
   }
-}
+} 
 
 .social-icon {
   fill:#fff;
@@ -94,6 +112,101 @@ body {
   fill:#000;
 }
 
+.arrow-down {
+  fill: $black21;
+  transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 10;
+
+  @include maxw($lg) {
+    position: absolute;
+    right: 0;
+    top: 13px;
+    padding: 5px 10px;
+  }
+
+  &.active .arrow-down{
+    transform: rotate(180deg);
+    fill: $pink;
+  }
+}
+
+.menu-burger {
+  width: 40px;
+  height: 26px;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  display: none;
+
+  @include maxw($lg) {
+    display: block;
+  }
+
+  span {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background-color: $black21;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    left: 0;
+    background-color: $black21;
+    transition: transform 0.3s;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+}
+
+.menu-burger--active {
+  span { 
+    opacity: 0;
+  }
+
+  &::before,
+  &::after {
+    top: 50%;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  } 
+}
+
 .text {
   display: block;
   text-align: center;
@@ -101,6 +214,10 @@ body {
   font-size: 16px; 
   line-height: 1.25;
   margin-bottom: 50px;
+
+  @include maxw($xs) {
+    font-size: 14px;
+  }
 }    
   
 .follow,
@@ -128,10 +245,43 @@ body {
   align-items: center;
   border-radius: 30px;
   box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+ 
+  @include maxw($md) {
+    max-width: 100%;
+    height: 140px;
+    margin-bottom: 50px;
+  }
+
+  @include maxw($xs) {
+    height: 100px;
+  }
 
   .audio {
     width: 60%;
     outline: none;
-  }     
+
+    @include maxw($md) {
+      width: 95%;
+    }
+
+    @include maxw($xs) {
+      width: 98%;
+    }
+  }      
 } 
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include maxw($xs) {
+    display: none;
+  }
+}
+
+
 

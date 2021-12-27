@@ -1,17 +1,35 @@
 .contact {
   padding: 120px 0;
 
+  @include maxw($sm) {
+    padding: 50px 0;
+  }
+
   &__subtitle {
     text-transform: uppercase;
     color: $black111;
     font-size: 28px;
     line-height: 1.1;
     margin-bottom: 10px;
+
+    @include maxw($sm) {
+      font-size: 22px;
+    } 
   }
 
   &__list {
     display: flex;
     justify-content: space-between;
+
+    @include maxw($lg) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    @include maxw($lg) {
+     padding: 15px;
+    }
   }
 
   &__link {
@@ -20,6 +38,7 @@
     color: $grey666;
     display: block;
   }
+
 
   &__link:not(:last-child)  {
     margin-bottom: 6px;

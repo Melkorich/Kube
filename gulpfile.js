@@ -11,7 +11,7 @@ const fileinclude = require('gulp-file-include');
 
 //nmp-check-updates
 
-function htmlInclude() {
+function htmlInclude() { 
   return src(['app/html/*.html'])
   .pipe(fileinclude({
     prefix: '@@',
@@ -40,7 +40,7 @@ function browsersync(){
     },
     notify: false
   })
-}
+} 
  
 function styles(){
   return src('app/scss/style.scss')
@@ -58,6 +58,7 @@ function scripts(){
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/lity/dist/lity.js',
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))

@@ -2,22 +2,39 @@
   background-color: $pink;
   padding: 80px 0;
 
+  @include maxw($lg) {
+    padding: 40px 0;
+  }
+
   &__list {
     display: flex;
     align-items: center;
     vertical-align: baseline;
-  }
+  } 
 
   &__inner {
     padding: 0 45px;
     display: flex;
     align-items: center;
+
+    @include maxw($sm) {
+      overflow: 0 30px;
+    }
   } 
 
   &__image {
     height: 75px;
     max-width: 560px;
     width: auto;
+
+    @include maxw($lg) {
+      height: 50px;
+      vertical-align: baseline;
+    }
+
+    @include maxw($sm) {
+      height: 40px;
+    }
 
     .partners__img {
       width: 100%;

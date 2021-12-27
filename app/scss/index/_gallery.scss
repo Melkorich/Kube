@@ -3,6 +3,18 @@
   &__items {
     display: grid;
     grid-template-columns:repeat(4, 1fr);
+
+    @include maxw($lg) {
+      grid-template-columns:repeat(3, 1fr);
+    }
+
+    @include maxw($md) {
+      grid-template-columns:repeat(2, 1fr);
+    }
+
+    @include maxw($xs) {
+      grid-template-columns:repeat(1, 1fr);
+    }
   }
 
   &__item {
@@ -12,7 +24,7 @@
 
     &:hover .gallery__img {
       transform: scale(1.05);
-    }  
+    }   
 
     &:hover::after {
       background-color: rgba(#212121, 0);

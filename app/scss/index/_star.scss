@@ -5,18 +5,35 @@
   padding: 170px 0;
   text-align: center;
 
+  @include maxw($md) {
+    padding: 80px 0;
+  }
+
   &__title {
     text-transform: uppercase;
     color: $pink;
     font-size: 48px;
     line-height: 1.125;
     margin-bottom: 30px;
+
+    @include maxw($md) {
+     font-size: 40px;
+    }
+
+    @include maxw($xs) {
+      font-size: 35px;
+    }
   }
 
   &__text {
     font-size: 24px;
     @extend %raleway;
     max-width: 1138px;
+
+    @include maxw($md) {
+      font-size: 18px;
+      max-width: 100%;
+    }
   }
 
   &__cite {

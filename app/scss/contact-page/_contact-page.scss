@@ -2,6 +2,10 @@
 
   &__inner {
     display: flex;
+
+    @include maxw($lg) {
+     display: block;
+    }
   } 
 
   &__user-form {
@@ -9,12 +13,26 @@
     max-width: 770px;
     width: 100%;
     margin-right: 30px;
+
+    @include maxw($lg) {
+      max-width: 100%;
+      padding: 80px 0 40px;
+    } 
+
+    @include maxw($md) {
+      padding: 40px 0;
+    }
   }
 
   &__title {
     text-transform: initial;
     text-align: left;
     margin-bottom: 36px;
+
+    @include maxw($md) {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
 
     &::before {
       display: none;
@@ -26,6 +44,10 @@
       font-size: 22px;
       line-height: 1.4;
       font-weight: 400;
+
+      @include maxw($md) {
+        font-size: 18px;
+      }
     }
   }
 
@@ -38,6 +60,14 @@
     justify-content: center;
     padding: 30px;
     min-width: 320px;
+
+    @include maxw($lg) {
+      margin-bottom: 20px;
+    }
+
+    @include maxw($sm) {
+      padding: 20px 15px;
+    }
   }
 
   &__info-title {
@@ -69,7 +99,12 @@
       height: 35px;
       background-repeat:no-repeat;
       background-size: contain;
-    }
+
+      @include maxw($sm) {
+        width: 25px;
+        height: 25px;
+      }
+    } 
   } 
 
   &__info-item:not(:last-child) {
@@ -96,6 +131,10 @@
 .contacts-form {
   max-width: 770px;
   width: 100%;
+
+  @include maxw($lg) {
+    max-width: 100%;
+  }
 
   .contacts__input {
     width: 100%;
@@ -188,6 +227,5 @@
       animation-name: move-line2;
       animation-duration: 0.3s;
     }
-
   }
 }

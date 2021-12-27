@@ -7,7 +7,7 @@
   <title>Taylor Swift</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>   
+<body>    
 
   <div class="wrapper">
      
@@ -28,7 +28,37 @@
             <a class="menu__link link-animate" href="index.html">Home</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link link-animate" href="band.html">Band</a>
+            <a class="menu__link menu__sub link-animate" href="band.html">Band
+            </a> 
+            <span  class="arrow">
+              <svg class="arrow-down" width="12" height="8">
+                <use xlink:href=images/sprite.svg#down></use>
+              </svg>
+            </span> 
+
+            <ul class="sub-menu">
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="band-biography.html">
+                  Taylor Swift
+                </a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="band-biography.html">
+                  The Agency
+                </a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="band-biography.html">
+                  The Starlights
+                </a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="band-biography.html">
+                 Parents
+                </a>
+              </li>
+            </ul>
+
           </li>
           <li class="menu__item">
             <a class="menu__link link-animate" href="discography.html">Discography</a>
@@ -46,6 +76,9 @@
             <a class="menu__link link-animate" href="contact-page.html">Contacts</a>
           </li>
         </ul>
+        <button class="menu-burger">
+          <span></span>
+        </button>
       </nav>
     </div>
    
@@ -218,13 +251,15 @@
         <img class="album-card__img" src="images/reputation/album1.jpg" alt="the red album 2012">
       </a>
       <div class="album-card__content">
-        <span class="album-card__title">
-          1989
-        </span>
-        <span class="album-card__data">
-          2014
-        </span>
-        <ul class="social__links">
+        <div class="album-card__name">
+          <span class="album-card__title">
+            1989
+          </span>
+          <span class="album-card__data">
+            2014
+          </span>
+        </div>
+        <ul class="social__links album-slider__socials">
           <li class="social__item">
             <a class="social__link icon-animate" href="#">
               <svg class="social-icon" width="17" height="21">
@@ -256,13 +291,15 @@
         <img class="album-card__img" src="images/reputation/album2.jpg" alt="the red album 2012">
       </a>
       <div class="album-card__content">
-        <span class="album-card__title">
-          1989
-        </span>
-        <span class="album-card__data">
-          2014
-        </span>
-        <ul class="social__links">
+        <div class="album-card__name">
+          <span class="album-card__title">
+            1989
+          </span>
+          <span class="album-card__data">
+            2014
+          </span>
+        </div>
+        <ul class="social__links album-slider__socials">
           <li class="social__item">
             <a class="social__link icon-animate" href="#">
               <svg class="social-icon" width="17" height="21">
@@ -294,13 +331,15 @@
         <img class="album-card__img" src="images/reputation/album3.jpg" alt="the red album 2012">
       </a>
       <div class="album-card__content">
-        <span class="album-card__title">
-          1989
-        </span>
-        <span class="album-card__data">
-          2014
-        </span>
-        <ul class="social__links">
+        <div class="album-card__name">
+          <span class="album-card__title">
+            1989
+          </span>
+          <span class="album-card__data">
+            2014
+          </span>
+        </div>
+        <ul class="social__links album-slider__socials">
           <li class="social__item">
             <a class="social__link icon-animate" href="#">
               <svg class="social-icon" width="17" height="21">
@@ -332,13 +371,16 @@
         <img class="album-card__img" src="images/reputation/album4.jpg" alt="the red album 2012">
       </a>
       <div class="album-card__content">
-        <span class="album-card__title">
-          1989
+        <div class="album-card__name">
+          <span class="album-card__title">
+            1989
+          </span>
+          <span class="album-card__data">
+            2014
+          </span>
+        </div>
         </span>
-        <span class="album-card__data">
-          2014
-        </span>
-        <ul class="social__links">
+        <ul class="social__links album-slider__socials">
           <li class="social__item">
             <a class="social__link icon-animate" href="#">
               <svg class="social-icon" width="17" height="21">
@@ -386,7 +428,7 @@
         <div class="shows__date">
           <span class="shows__number">
             10 
-          </span>
+          </span> 
           <span class="shows__data">
             May 2017
           </span>
@@ -403,12 +445,12 @@
               Las Vegas, USA
             </span>
           </div>
-        </div>
-        <div class="shows__button-box">
-          <a class="shows__btn blink-effect" href="tours-page.html">
-            SOLD <br> 
-            OUT!
-          </a>
+          <div class="shows__button-box">
+            <a class="shows__btn blink-effect" href="tours-page.html">
+              SOLD <br> 
+              OUT!
+            </a>
+          </div>
         </div>
       </div>
       <div class="shows__item">
@@ -432,12 +474,12 @@
               Edmonton, Canada
             </span>
           </div>
-        </div>
-        <div class="shows__button-box">
-          <a class="shows__btn blink-effect" href="tours-page.html">
-            SOLD <br> 
-            OUT!
-          </a>
+          <div class="shows__button-box">
+            <a class="shows__btn blink-effect" href="tours-page.html">
+              SOLD <br> 
+              OUT!
+            </a>
+          </div>
         </div>
       </div>
       <div class="shows__item">
@@ -461,12 +503,12 @@
               London, England
             </span>
           </div>
-        </div>
-        <div class="shows__button-box">
-          <a class="shows__btn blink-effect" href="tours-page.html">
-            BUY <br> 
-            Tickets
-          </a>
+          <div class="shows__button-box">
+            <a class="shows__btn blink-effect" href="tours-page.html">
+              BUY <br> 
+              Tickets
+            </a>
+          </div>
         </div>
       </div>
       <div class="shows__item">
@@ -490,12 +532,12 @@
               NY, USA, EAST Coast
             </span>
           </div>
-        </div>
-        <div class="shows__button-box">
-          <a class="shows__btn blink-effect" href="tours-page.html">
-            Sold <br> 
-            Out!
-          </a>
+          <div class="shows__button-box">
+            <a class="shows__btn blink-effect" href="tours-page.html">
+              Sold <br> 
+              Out!
+            </a>
+          </div>
         </div>
       </div>
       <div class="shows__item">
@@ -519,13 +561,13 @@
               The World Tour, NA, Europe, Oceania, Asia
             </span>
           </div>
+          <div class="shows__button-box">
+            <a class="shows__btn blink-effect" href="tours-page.html">
+              BUY <br> 
+              Tickets
+            </a>
+          </div>
         </div> 
-        <div class="shows__button-box">
-          <a class="shows__btn blink-effect" href="tours-page.html">
-            BUY <br> 
-            Tickets
-          </a>
-        </div>
       </div> 
     </div>
     <a class="shows__link view-all__link" href="tours.html">
@@ -533,7 +575,7 @@
     </a>  
   </div> 
 </section>
-
+ 
       <section class="star" style="background-image: url(images/star/star-bg.jpg);">
   <div class="container">
     <h2 class="star__title">
@@ -544,7 +586,7 @@
       <cite class="star__cite">Rockstar magazine, melbourne</cite>
     </blockquote>
   </div>
-</section>
+</section> 
 
       <section class="videos">
   <div class="container">
@@ -558,7 +600,7 @@
     <ul class="videos__list">
       <li class="videos__item">
         <div class="videos__card video-card">
-          <a class="video-card__link" href="#">
+          <a class="video-card__link" href="https://www.youtube.com/embed/wIft-t-MQuE" data-lity>
             <img class="video-card__img" src="images/videos/1.jpg" alt="video of are you ready for it musical clip">
             <span class="video-card__play">
               <img class="video-play" src="images/videos/play.svg" alt="play icon">
@@ -574,7 +616,7 @@
       </li>
       <li class="videos__item">
         <div class="videos__card video-card">
-          <a class="video-card__link" href="#">
+          <a class="video-card__link" href="https://www.youtube.com/embed/3tmd-ClpJxA" data-lity>
             <img class="video-card__img" src="images/videos/2.jpg" alt="video of are you ready for it musical clip">
             <span class="video-card__play">
               <img class="video-play" src="images/videos/play.svg" alt="play icon">
@@ -587,10 +629,10 @@
             Album “Reputation” 2017
           </span>
         </div>
-      </li>
+      </li>  
       <li class="videos__item">
         <div class="videos__card video-card">
-          <a class="video-card__link" href="#">
+          <a class="video-card__link" href="https://www.youtube.com/embed/tCXGJQYZ9JA" data-lity>
             <img class="video-card__img" src="images/videos/3.jpg" alt="video of are you ready for it musical clip">
             <span class="video-card__play">
               <img class="video-play" src="images/videos/play.svg" alt="play icon">
@@ -657,6 +699,14 @@
         <img class="article__img" src="images/news/article-1.jpg" alt="news image">
       </a>
       <div class="article__content">
+        <div class="article__date">
+          <span class="article__number">
+            17
+          </span>
+          <span class="article__month">
+            May
+          </span> 
+        </div>
         <h3 class="article__title">
           Taylor swift faces trial over shake it off lyrics
         </h3>
@@ -689,7 +739,7 @@
       <a class="article__more" href="press.html">
         Read More
       </a>
-    </article>
+    </article> 
   </li> 
   <li class="news__item">
     <article class="news__article article">
@@ -697,6 +747,14 @@
         <img class="article__img" src="images/news/article-3.jpg" alt="news image">
       </a>
       <div class="article__content">
+        <span class="article__date">
+          <span class="article__number">
+            25
+          </span>
+          <span class="article__month">
+            May
+          </span>
+        </span>
         <h3 class="article__title">
           13 Taylor’s songs most played in movies & tv
         </h3>
@@ -755,20 +813,21 @@
   </div>
 </div>
 
-    </main>  
+    </main>
 
     <footer class="footer">
   <div class="footer__top">
     <div class="container">
-      <h2 class="footer__title">
-        <img src="images/footer/footer-logo.png" alt="Taylor Swift name logo">
-      </h2>
-      <div class="footer__text">
-          <p>
-            "Please don't ever become a stranger."  — Taylor Swift, "New Year's Day"
-          </p> 
-      </div>
-      <ul class="footer__socials">
+      <div class="footer__content">
+        <h2 class="footer__title">
+          <img src="images/footer/footer-logo.png" alt="Taylor Swift name logo">
+        </h2>
+        <div class="footer__text">
+            <p>
+              "Please don't ever become a stranger."  — Taylor Swift, "New Year's Day"
+            </p> 
+        </div>
+        <ul class="footer__socials">
   <li class="footer__item">
     <a class="footer__link icon-animate" href="#">
       <svg class="social-icon" width="48" height="47">
@@ -812,6 +871,12 @@
     </a>
   </li>
 </ul>
+      </div> 
+
+      <video autoplay muted loop preload="auto" class="video-bg">
+        <source type="video/webm" src="videos/Taylor Swift  Ready For It.webm">
+        <source type="video/mp4" src="videos/Taylor Swift  Ready For It.mp4">
+      </video>
     </div>
   </div> 
 
@@ -820,7 +885,7 @@
       2021 All Rights Reserved.
     </span>
   </div>
-</footer>
+</footer> 
 
   </div>
 

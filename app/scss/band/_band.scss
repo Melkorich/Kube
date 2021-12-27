@@ -1,14 +1,47 @@
 .band {
    padding: 120px 0;
 
+  @include maxw($md) {
+    padding: 50px 0;
+  }
+
   &__list {
     display: flex;
     margin: 0 -15px;
     flex-wrap: wrap;
+
+    @include maxw($sm) {
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   &__item {
     padding: 15px;
     display: flex;
+
+    @include maxw($sm) {
+      display: block;
+      padding: 15px 0;
+    } 
+  }
+
+  .social__links {
+    @include maxw($sm) {
+     justify-content: center;
+     padding-top: 15px;
+    } 
+  }
+
+  .social__item:not(:last-child) {
+    @include maxw($sm) {
+      margin-right: 0;
+    }
+  } 
+
+  .social__item {
+    @include maxw($sm) {
+      padding: 0 15px;
+    }
   }
 } 

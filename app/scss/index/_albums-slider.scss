@@ -4,10 +4,26 @@
   .social__item {
     margin-right: 10px;
   }
+
+  .view-all__link {
+
+    @include maxw($sm) {
+       margin: 0 auto;
+    }
+  }
 }
 
 .album-card {
   display: flex;
+
+  @include maxw($xl) {
+    flex-direction: column;
+    margin-right: 15px;
+  }
+
+  @include maxw($xs) {
+    margin-right: 0;
+  }
 
   &__link {
     margin-right: 20px;
@@ -15,6 +31,16 @@
     height: 150px;
     display: inline-block;
     position: relative;
+
+    @include maxw($xl) {
+      margin-right: 0;
+      margin-bottom: 10px;
+      height: 200px;
+    }
+
+    @include maxw($md) {
+      height: 180px;
+    }
 
     &:hover::before{
       background-color: rgba(#D71362, 0.05);
@@ -29,6 +55,10 @@
       top: 0;
       left: 0;
       transition: background-color 0.4s;
+
+      @include maxw($xl) {
+        display: none;
+      }
     } 
 
     .album-card__img {
@@ -38,12 +68,22 @@
     }
   }
 
+  &__content {
+    @include maxw($xl) {
+      display: flex;
+    }
+  }
+
   &__title {
     text-transform: uppercase;
     display: block;
     font-size: 16px;
     line-height: 1.4;
     font-weight: 600;
+
+    @include maxw($xl) {
+      margin-right: 10px;
+    }
   }
 
   &__data {
@@ -52,13 +92,35 @@
     display: block;
     margin-bottom: 15px;
   }
+
+  .album-slider__socials {
+
+    @include maxw($xl) {
+      margin-left: auto;
+    }
+  }
 }
 
 .album-slider {
  width: 270px;
  margin-bottom: 40px;
+
+  @include maxw($xl) {
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+    margin-bottom: 150px;
+  } 
+
+  @include maxw($xs) {
+    margin-bottom: 120px;
+  }
 }
 
 .album-card {
   padding: 15px 0;
+
+  @include maxw($xs) {
+    padding: 0 5px;
+  }
 }

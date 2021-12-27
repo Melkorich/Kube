@@ -1,6 +1,10 @@
 .media {
   padding: 120px 0 0 0;
 
+  @include maxw($md) {
+    padding: 50px 0 0 0;
+  }
+
   .video__box {
     cursor: pointer;
     width: 100%;
@@ -30,9 +34,20 @@
   max-width: 936px;
   text-align: center;
 
+  @include maxw($xs) {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
   a {
     color: $black21;
     font-size: 16px;
     line-height: 1.4;
+
+    @include maxw($xs) {
+      display: inline-block;
+      width: 100%;
+      padding-top: 15px;
+    }
   }
 }

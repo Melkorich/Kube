@@ -25,7 +25,37 @@
             <a class="menu__link link-animate" href="index.html">Home</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link link-animate" href="band.html">Band</a>
+            <a class="menu__link menu__sub link-animate" href="band.html">Band
+            </a> 
+            <span  class="arrow">
+              <svg class="arrow-down" width="12" height="8">
+                <use xlink:href=images/sprite.svg#down></use>
+              </svg>
+            </span> 
+
+            <ul class="sub-menu">
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="band-biography.html">
+                  Taylor Swift
+                </a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="band-biography.html">
+                  The Agency
+                </a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="band-biography.html">
+                  The Starlights
+                </a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="band-biography.html">
+                 Parents
+                </a>
+              </li>
+            </ul>
+
           </li>
           <li class="menu__item">
             <a class="menu__link link-animate" href="discography.html">Discography</a>
@@ -43,6 +73,9 @@
             <a class="menu__link link-animate" href="contact-page.html">Contacts</a>
           </li>
         </ul>
+        <button class="menu-burger">
+          <span></span>
+        </button>
       </nav>
     </div>
    
@@ -193,15 +226,16 @@
     <footer class="footer">
   <div class="footer__top">
     <div class="container">
-      <h2 class="footer__title">
-        <img src="images/footer/footer-logo.png" alt="Taylor Swift name logo">
-      </h2>
-      <div class="footer__text">
-          <p>
-            "Please don't ever become a stranger."  — Taylor Swift, "New Year's Day"
-          </p> 
-      </div>
-      <ul class="footer__socials">
+      <div class="footer__content">
+        <h2 class="footer__title">
+          <img src="images/footer/footer-logo.png" alt="Taylor Swift name logo">
+        </h2>
+        <div class="footer__text">
+            <p>
+              "Please don't ever become a stranger."  — Taylor Swift, "New Year's Day"
+            </p> 
+        </div>
+        <ul class="footer__socials">
   <li class="footer__item">
     <a class="footer__link icon-animate" href="#">
       <svg class="social-icon" width="48" height="47">
@@ -245,6 +279,12 @@
     </a>
   </li>
 </ul>
+      </div> 
+
+      <video autoplay muted loop preload="auto" class="video-bg">
+        <source type="video/webm" src="videos/Taylor Swift  Ready For It.webm">
+        <source type="video/mp4" src="videos/Taylor Swift  Ready For It.mp4">
+      </video>
     </div>
   </div> 
 

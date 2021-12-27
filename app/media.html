@@ -24,7 +24,37 @@
             <a class="menu__link link-animate" href="index.html">Home</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link link-animate" href="band.html">Band</a>
+            <a class="menu__link menu__sub link-animate" href="band.html">Band
+            </a> 
+            <span  class="arrow">
+              <svg class="arrow-down" width="12" height="8">
+                <use xlink:href=images/sprite.svg#down></use>
+              </svg>
+            </span> 
+
+            <ul class="sub-menu">
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="band-biography.html">
+                  Taylor Swift
+                </a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="band-biography.html">
+                  The Agency
+                </a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="band-biography.html">
+                  The Starlights
+                </a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="band-biography.html">
+                 Parents
+                </a>
+              </li>
+            </ul>
+
           </li>
           <li class="menu__item">
             <a class="menu__link link-animate" href="discography.html">Discography</a>
@@ -42,6 +72,9 @@
             <a class="menu__link link-animate" href="contact-page.html">Contacts</a>
           </li>
         </ul>
+        <button class="menu-burger">
+          <span></span>
+        </button>
       </nav>
     </div>
    
@@ -99,7 +132,7 @@
           <ul class="videos__list">
             <li class="videos__item">
               <div class="videos__card video-card">
-                <a class="video-card__link" href="#">
+                <a class="video-card__link" href="https://www.youtube.com/embed/wIft-t-MQuE" data-lity>
                   <img class="video-card__img" src="images/videos/1.jpg" alt="video of are you ready for it musical clip">
                   <span class="video-card__play">
                     <img class="video-play" src="images/videos/play.svg" alt="play icon">
@@ -115,7 +148,7 @@
             </li>
             <li class="videos__item">
               <div class="videos__card video-card">
-                <a class="video-card__link" href="#">
+                <a class="video-card__link" href="https://www.youtube.com/embed/3tmd-ClpJxA" data-lity>
                   <img class="video-card__img" src="images/videos/2.jpg" alt="video of are you ready for it musical clip">
                   <span class="video-card__play">
                     <img class="video-play" src="images/videos/play.svg" alt="play icon">
@@ -131,7 +164,7 @@
             </li>
             <li class="videos__item">
               <div class="videos__card video-card">
-                <a class="video-card__link" href="#">
+                <a class="video-card__link" href="https://www.youtube.com/embed/tCXGJQYZ9JA" data-lity>
                   <img class="video-card__img" src="images/videos/3.jpg" alt="video of are you ready for it musical clip">
                   <span class="video-card__play">
                     <img class="video-play" src="images/videos/play.svg" alt="play icon">
@@ -147,7 +180,7 @@
             </li>
             <li class="videos__item">
               <div class="videos__card video-card">
-                <a class="video-card__link" href="#">
+                <a class="video-card__link" href="https://www.youtube.com/embed/AgFeZr5ptV8" data-lity>
                   <img class="video-card__img" src="images/videos/4.jpg" alt="video of are you ready for it musical clip">
                   <span class="video-card__play">
                     <img class="video-play" src="images/videos/play.svg" alt="play icon">
@@ -163,7 +196,7 @@
             </li>
             <li class="videos__item">
               <div class="videos__card video-card">
-                <a class="video-card__link" href="#">
+                <a class="video-card__link" href="https://www.youtube.com/embed/w1oM3kQpXRo" data-lity>
                   <img class="video-card__img" src="images/videos/5.jpg" alt="video of are you ready for it musical clip">
                   <span class="video-card__play">
                     <img class="video-play" src="images/videos/play.svg" alt="play icon">
@@ -179,14 +212,14 @@
             </li>
             <li class="videos__item">
               <div class="videos__card video-card">
-                <a class="video-card__link" href="#">
+                <a class="video-card__link" href="https://www.youtube.com/embed/-mrC5tRkxrY" data-lity>
                   <img class="video-card__img" src="images/videos/6.jpg" alt="video of are you ready for it musical clip">
                   <span class="video-card__play">
                     <img class="video-play" src="images/videos/play.svg" alt="play icon">
                   </span>
                 </a>
                 <h3 class="video-card__title">
-                  Gorilla business
+                  State of Grace
                 </h3>
                 <span class="video-card__text">
                   Album “RED” 2012
@@ -245,7 +278,7 @@
 
           <div class="video__watch-more">
             <p>
-              For more videos to enjoy, please check our official webpage on Youtube: <a class="video_-watch-link link-animate" href="https://www.youtube.com/c/TaylorSwift" target="_blank">https://www.youtube.com/c/TaylorSwift</a>
+              For more videos to enjoy, please check our official webpage on Youtube: <a class="video_-watch-link link-animate" href="https://www.youtube.com/c/TaylorSwift" target="_blank">www.youtube.com/TaylorSwift</a>
             </p>
           </div>
         </div>
@@ -257,15 +290,16 @@
     <footer class="footer">
   <div class="footer__top">
     <div class="container">
-      <h2 class="footer__title">
-        <img src="images/footer/footer-logo.png" alt="Taylor Swift name logo">
-      </h2>
-      <div class="footer__text">
-          <p>
-            "Please don't ever become a stranger."  — Taylor Swift, "New Year's Day"
-          </p> 
-      </div>
-      <ul class="footer__socials">
+      <div class="footer__content">
+        <h2 class="footer__title">
+          <img src="images/footer/footer-logo.png" alt="Taylor Swift name logo">
+        </h2>
+        <div class="footer__text">
+            <p>
+              "Please don't ever become a stranger."  — Taylor Swift, "New Year's Day"
+            </p> 
+        </div>
+        <ul class="footer__socials">
   <li class="footer__item">
     <a class="footer__link icon-animate" href="#">
       <svg class="social-icon" width="48" height="47">
@@ -309,6 +343,12 @@
     </a>
   </li>
 </ul>
+      </div> 
+
+      <video autoplay muted loop preload="auto" class="video-bg">
+        <source type="video/webm" src="videos/Taylor Swift  Ready For It.webm">
+        <source type="video/mp4" src="videos/Taylor Swift  Ready For It.mp4">
+      </video>
     </div>
   </div> 
 
