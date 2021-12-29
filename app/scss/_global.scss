@@ -289,16 +289,19 @@ body.touch .sub-menu.open {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (orientation:portrait) { 
-  body {
-  -webkit-transform: rotate(90deg);
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0; 
-  }
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color:#111111;
+  box-shadow: 0 0 2px rgba(#D71362, 0.5) inset;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:rgba(#D71362, 0.8);
+  border-radius: 10px;
+  border: 2px solid #343434;
 }
 
 

@@ -4,13 +4,13 @@
   background-size: cover;
   background-attachment: fixed;
 
-  @include maxw($md) {
+  @include maxw($lg) {
     background-attachment: scroll;
-  }
+  } 
 
-  @include maxw($sm) {
-    background-position: center left;
-  }  
+  // @include maxw($xs) {
+  //   background-position: left center;
+  // }  
 
   &__inner {
     min-height: 100vh;
