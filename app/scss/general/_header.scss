@@ -1,4 +1,5 @@
 .header {
+  background-image:url(../images/header/bg1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -8,9 +9,9 @@
     background-attachment: scroll;
   } 
 
-  // @include maxw($xs) {
-  //   background-position: left center;
-  // }  
+  @include maxw($md) {
+    background-image:url(../images/header/mobile-bg2.jpg);
+  }  
 
   &__inner {
     min-height: 100vh;
