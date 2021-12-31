@@ -15,4 +15,9 @@
     color: $pink;
     border-color: $pink;
   } 
+
+  @include maxw($md) {
+    position: relative;
+    z-index: 2;
+  }
 }  
