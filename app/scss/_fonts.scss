@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'PTMono-Regular';
+  font-family: 'PTMono';
   src: 
     local('PTMono'),
     url('../fonts/PTMono-Regular.woff2') format('woff2'),
@@ -11,11 +11,11 @@
 } 
 
 @font-face {
-  font-family: 'Raleway-Regular';
+  font-family: 'Raleway';
   src: 
     local('Raleway'),
-    url('../fonts/PTMono-Regular.woff2') format('woff2'),
-    url('../fonts/PTMono-Regular.woff') format('woff');
+    url('../fonts/Raleway-Regular.woff2') format('woff2'),
+    url('../fonts/Raleway-Regular.woff') format('woff');
     
   font-weight: 400;
   font-style: normal;
