@@ -3,7 +3,7 @@
 .idea/*
 .vscode
 *.sublime*
-npm-debug.*
+npm-debug.* 
 
 # dist/
 node_modules/
