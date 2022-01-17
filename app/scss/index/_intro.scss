@@ -73,9 +73,7 @@
   }
 
   &__numbers {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexc();
 
     @include maxw($sm) {
       flex-wrap: wrap;

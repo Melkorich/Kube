@@ -1,0 +1,184 @@
+@@include('./general/_head.html') 
+
+<body>
+  <div class="wrapper">
+
+    @@include('./general/_header-menu.html')
+
+    <main class="main main--discography">
+
+      @@include('./general/_breadcrumbs.html') 
+  
+  
+      <section class="discography">
+        <div class="container">
+          <h1 class="discography__title title">
+            Discography
+          </h1>
+          <span class="discography__text">
+            Don’t Miss Our Album
+          </span>
+  
+          <ul class="discography__items">
+            <li class="discography__item">
+              <a class="discography__card disco-card" href="#">
+                <div class="disco-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="images/discography/1.webp 1x">
+                    <img class="disco-card__img" src="images/discography/1.jpg" alt="album folklore">
+                  </picture>
+                </div>
+                <h3 class="disco-card__title">
+                  Folklore
+                </h3>
+                <span class="disco-card__year">
+                  2020
+                </span>
+              </a>
+            </li>
+            <li class="discography__item">
+              <a class="discography__card disco-card" href="#">
+                <div class="disco-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="images/discography/2.webp 1x">
+                    <img class="disco-card__img" src="images/discography/2.jpg" alt="album folklore">
+                  </picture>
+                </div>
+                <h3 class="disco-card__title">
+                  Evermore
+                </h3>
+                <span class="disco-card__year">
+                  2020
+                </span> 
+              </a>
+            </li>
+            <li class="discography__item">
+              <a class="discography__card disco-card" href="#">
+                <div class="disco-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="images/discography/3.webp 1x">
+                    <img class="disco-card__img" src="images/discography/3.jpg" alt="album folklore">
+                  </picture>
+                </div>
+                <h3 class="disco-card__title" style="text-transform: uppercase;">
+                  Red
+                </h3>
+                <span class="disco-card__year">
+                  2014
+                </span>
+              </a>
+            </li>
+            <li class="discography__item">
+              <a class="discography__card disco-card" href="#">
+                <div class="disco-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="images/discography/4.webp 1x">
+                    <img class="disco-card__img" src="images/discography/4.jpg" alt="album folklore">
+                  </picture>
+                </div>
+                <h3 class="disco-card__title">
+                  Speak Now
+                </h3>
+                <span class="disco-card__year">
+                  2010
+                </span> 
+              </a>
+            </li>
+            <li class="discography__item">
+              <a class="discography__card disco-card" href="#">
+                <div class="disco-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="images/discography/5.webp 1x">
+                    <img class="disco-card__img" src="images/discography/5.jpg" alt="album folklore">
+                  </picture>
+                </div>
+                <h3 class="disco-card__title">
+                  1989
+                </h3>
+                <span class="disco-card__year">
+                  2014
+                </span> 
+              </a>
+            </li>
+            <li class="discography__item">
+              <a class="discography__card disco-card" href="#">
+                <div class="disco-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="images/discography/6.webp 1x">
+                    <img class="disco-card__img" src="images/discography/6.jpg" alt="album folklore">
+                  </picture>
+                </div>
+                <h3 class="disco-card__title">
+                  Fearless
+                </h3>
+                <span class="disco-card__year">
+                  2008
+                </span>  
+              </a> 
+            </li> 
+          </ul>
+        </div>
+      </section> 
+  
+      <section class="reputation-disc" style="background-image: url(images/reputation/bg.jpg);">
+        <div class="container"> 
+          <div class="reputation-disc__inner">
+            <a class="reputation__image" href="discography-reputation.html">
+              <picture>
+                <source type="image/webp" srcset="images/reputation/disc.webp 1x">
+                <img class="reputation__img" src="images/reputation/disc.png" alt="disc album reputation">
+              </picture>
+            </a>
+            <div class="reputation-disc__content">
+              <h2 class="reputation__title">
+                Album of decade
+              </h2>
+              <div class="reputation__info">
+                <span class="reputation__data">
+                  Realese Date : 10 November 2017
+                </span>
+                <span class="reputation__inc">
+                  Rometheme Record. Inc
+                </span>
+              </div>
+              <span class="reputation__available">
+                Available on
+              </span>
+              <ul class="social__links">
+                <li class="social__item">
+                  <a class="social__link icon-animate" href="#">
+                    <svg class="social-icon" width="27" height="33">
+                      <use xlink:href=images/sprite.svg#apple></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link icon-animate" href="#">
+                    <svg class="social-icon" width="35" height="35">
+                      <use xlink:href=images/sprite.svg#spotify></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link icon-animate" href="#">
+                    <svg class="social-icon" width="45" height="21">
+                      <use xlink:href=images/sprite.svg#icloud></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul> 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      @@include('./general/_contact.html')
+
+    </main>
+
+    @@include('./general/_footer.html')
+
+  </div> 
+
+  @@include('./general/_script.html')
+</body>

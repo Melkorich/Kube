@@ -33,15 +33,12 @@
 
   &__top-inner {
     padding: 15px 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexb();
     height: 95px;
   }
 
   &__content {
     margin: auto 0;
-    // padding-top: 20px;
     padding-top: 95px;
 
     @include maxw($sm) {
@@ -100,6 +97,7 @@
     margin-bottom: 21px;
     @extend %PTMono;
     font-weight: 600;
+    text-transform: uppercase;
 
     @include maxw($md) {
       font-size: 60px;

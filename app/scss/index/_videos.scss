@@ -42,7 +42,6 @@
     height: 55px;
     margin: 0 auto;
   }
-
 }
 
 .video-card {
@@ -111,9 +110,7 @@
       width: 60px;
       height: 60px;
       background-color: rgba(#D71362, 0.5);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flexc();
       border-radius: 50%;
       transition: background-color 0.3s;
 
@@ -143,5 +140,4 @@
     font-size: 14px;
     color: $grey666;
   }  
-  
 }

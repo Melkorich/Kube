@@ -212,9 +212,7 @@
     @extend %PTMono;
     font-size: 16px;
     line-height: 1.125;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexc();
     width: 190px;
     border: 1px solid transparent;
     border-radius: 5px;

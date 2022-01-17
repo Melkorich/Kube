@@ -76,7 +76,7 @@ $(function(){
     autoplay: true,
     autoplaySpeed: 4000,
     draggable: false,
-  });
+  }); 
 
   $('.menu-burger').on('click', function() {
     $('.menu-burger').toggleClass('menu-burger--active');

@@ -209,9 +209,7 @@
   .contacts__btn {
     width: 270px;
     height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexc();
     background-color: $pink;
     color: #fff;
     text-transform: uppercase;
