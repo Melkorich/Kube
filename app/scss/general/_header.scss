@@ -83,7 +83,7 @@
       width: 50px;
       height: 1px;
       top: 13px;
-      left: 0;
+      left: 0; 
 
       @include maxw($md) {
         display: none;
