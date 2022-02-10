@@ -27,12 +27,9 @@ if(isMobile.any()){
 
 //чтобы стрелка при клике работала всегда, например без ховера, то просто удалить или закоментить if else
 
-$(document).ready(function() {
-	$('.wrapper').addClass('active');
-});
-
 $(function(){ 
-
+  
+	$('.wrapper').addClass('active');
 
   $('.album-slider').slick({
     vertical: true,
@@ -67,7 +64,7 @@ $(function(){
         }   
       },
     ]
-  
+   
   });
 
   $('.partners__slider').slick({
@@ -81,11 +78,13 @@ $(function(){
   $('.menu-burger').on('click', function() {
     $('.menu-burger').toggleClass('menu-burger--active');
     $('.menu__list').toggleClass('menu__list--active');
+    $('body').toggleClass('no-scroll');
   });
 
   $('.menu__link').on('click', function() {
     $('.menu-burger').removeClass('menu-burger--active');
     $('.menu__list').removeClass('menu__list--active');
+    $('body').removeClass('no-scroll');
   });
 
   // $('.arrow').on('click', function() {
